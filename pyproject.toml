@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "beamai-drive"
+version = "0.1.0"
+description = ""
+authors = ["Ved Kothavade <ved@kothavade.com>"]
+readme = "README.md"
+packages = [{ include = "beamai" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.7.0.68"
+PyAutoGUI = "^0.9.53"
+mss = "^7.0.1"
+
+# ruff line lenght
+beamngpy = "^1.25.1"
+matplotlib = "^3.6.2"
+[tool.ruff]
+line-length = 120
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
